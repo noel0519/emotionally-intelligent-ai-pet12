@@ -1,3 +1,7 @@
+<div style={{color:'white', fontSize: '32px', padding:'40px'}}>
+  TEST TEXT VISIBLE?
+</div>
+
 import { useState } from 'react';
 import { MessageCircle, Heart, Sparkles, BarChart3 } from 'lucide-react';
 import { usePetState } from './hooks/usePetState';
