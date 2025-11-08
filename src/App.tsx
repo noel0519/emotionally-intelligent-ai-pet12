@@ -1,6 +1,12 @@
-<div style={{color:'white', fontSize: '32px', padding:'40px'}}>
-  TEST TEXT VISIBLE?
-</div>
+function App() {
+  return (
+    <div style={{color:'white', fontSize:'32px', padding:'40px'}}>
+      TEST TEXT VISIBLE?
+    </div>
+  );
+}
+export default App;
+
 
 import { useState } from 'react';
 import { MessageCircle, Heart, Sparkles, BarChart3 } from 'lucide-react';
