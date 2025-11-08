@@ -23,14 +23,16 @@ function App() {
   const { memories } = useMemories(pet);
 
   if (petLoading || !pet) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 flex items-center justify-center">
-        <div className="text-center space-y-4">
-          <div className="text-6xl animate-bounce">🥚</div>
-          <p className="text-white text-xl font-medium">Loading your pet...</p>
-        </div>
+   return (
+  <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 flex items-center justify-center text-white">
+    <div className="text-center space-y-4">
+      <div className="text-4xl font-bold animate-pulse">
+        Echo is waking up...
       </div>
-    );
+      <div className="opacity-75">Loading your pet's mind</div>
+    </div>
+  </div>
+);
   }
 
   const tabs = [
