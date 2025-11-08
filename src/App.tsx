@@ -14,9 +14,7 @@ import { StatsDisplay } from './components/StatsDisplay';
 type Tab = 'chat' | 'care' | 'memories' | 'stats';
 
 function App() {
-  <div style={{color:'white', fontSize:'32px', padding:'40px'}}>
-      TEST TEXT VISIBLE?
-    </div>
+  
   const [activeTab, setActiveTab] = useState<Tab>('chat');
   const { pet, loading: petLoading, performAction } = usePetState();
   const { messages, sendMessage, loading: chatLoading } = useConversation(pet);
