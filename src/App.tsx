@@ -31,7 +31,7 @@ function App() {
     { id: 'chat' as Tab, label: 'Chat', icon: MessageCircle },
     { id: 'care' as Tab, label: 'Care', icon: Heart },
     { id: 'memories' as Tab, label: 'Memories', icon: Sparkles },
-    { id: 'stats' as Tab, label: 'Stats', icon: BarChart3 },
+    { id: 'stats' as Tab, label: 'Stats', icon: BarChart },
   ];
 
   return (
