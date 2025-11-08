@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* gentle idle "breathing" */
+@keyframes pet-breathe {
+  0%   { transform: translateY(0) scale(1); }
+  50%  { transform: translateY(-2px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+.pet-breathe {
+  animation: pet-breathe 2.4s ease-in-out infinite;
+  image-rendering: pixelated; /* keeps pixels crisp */
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+}
+
+/* dreamy floating + soft glow */
+@keyframes pet-dream {
+  0%   { transform: translateY(0) }
+  50%  { transform: translateY(-6px) }
+  100% { transform: translateY(0) }
+}
+.pet-dream {
+  animation: pet-dream 3s ease-in-out infinite;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 0 18px rgba(0, 217, 192, 0.35));
+}
